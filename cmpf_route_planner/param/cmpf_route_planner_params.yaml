@@ -1,0 +1,6 @@
+/motion_planner/planner_type: "frenet_lattice"
+/route_planner/publish_route_markers: true
+
+
+
+

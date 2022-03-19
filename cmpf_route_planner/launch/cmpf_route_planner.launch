@@ -1,0 +1,7 @@
+<!-- -->
+<launch>
+    <node pkg="cmpf_route_planner" type="cmpf_route_planner_node" name="cmpf_route_planner_node" output="screen">
+        <rosparam command="load" file="$(find cmpf_route_planner)/param/cmpf_route_planner_params.yaml"/>
+    </node>
+</launch>
+

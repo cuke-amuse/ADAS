@@ -1,0 +1,7 @@
+<!-- -->
+<launch>
+    <node pkg="lanelet2_map_server" type="lanelet2_map_server_node" name="lanelet2_map_server_node" output="screen">
+        <rosparam command="load" file="$(find lanelet2_map_server)/param/lanelet2_map_params.yaml"/>
+    </node>
+</launch>
+
