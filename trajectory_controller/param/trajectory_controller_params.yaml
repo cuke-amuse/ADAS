@@ -1,0 +1,8 @@
+/trajectory_control/controller_type: "Stanley"
+/motion_control/steer_control_gain: 2
+/motion_control/steer_control_max_lookahead_dist: 80.0
+/motion_control/steer_control_min_lookahead_dist: 3
+/motion_control/longitudinal_pid_kp: 2.0
+/motion_control/longitudinal_pid_kd: 0.1
+/motion_control/longitudinal_pid_ki: 0.0
+/trajectory_control/frequency_rate: 5.0
