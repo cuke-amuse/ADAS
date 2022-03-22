@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(trajectory_controller)
 
-add_compile_options(-std=c++11 -g)
+add_compile_options(-std=c++14 -g)
 
 find_package(catkin REQUIRED COMPONENTS
   rospy
@@ -30,7 +30,9 @@ include_directories(${EIGEN3_INCLUDE_DIR})
 
 add_executable(trajectory_controller
   src/trajectory_controller.cpp
-  src/trajectory_controller_node.cpp)
+  src/trajectory_controller_node.cpp
+  src/trajectory_process.cpp
+  )
 
 target_link_libraries(trajectory_controller
   ${catkin_LIBRARIES}

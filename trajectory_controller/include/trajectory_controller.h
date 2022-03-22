@@ -11,23 +11,8 @@
 #include <unordered_map>
 #include <vector>
 
+#include "math_calc.h"
 using namespace std;
-
-////////////////////////////////////////////////////////////////////////////////
-// Helper functions
-////////////////////////////////////////////////////////////////////////////////
-
-vector<double> linspace(double a, double b, int num = 50, bool endpoint = true);
-
-double distance2D(double x1, double y1, double x2, double y2);
-
-double norm(vector<double> a);
-
-double cross(vector<double> &A, vector<double> &B);
-
-////////////////////////////////////////////////////////////////////////////////
-// TrajectoryController class
-////////////////////////////////////////////////////////////////////////////////
 
 class TrajectoryController {
 public:
@@ -59,7 +44,7 @@ public:
                        bool add_latency);
 
   void reset_all_vars() { m_vars.clear(); }
-
+  void ReInit();
 private:
   string m_control_method;
   double m_lookahead_dist_mpc;
